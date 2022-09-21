@@ -5,8 +5,9 @@
   transform: translate(-$x, -$y);
 }
 
-@mixin text-property($fontSize, $color, $transform) {
+@mixin text-property($fontSize, $fontFamily, $color, $transform) {
   font-size: $fontSize;
+  font-family: $fontFamily;
   color: $color;
   text-transform: $transform;
 }
@@ -15,4 +16,10 @@
   display: flex;
   justify-content: $horizontal;
   align-items: $vertical;
+}
+
+@mixin transition($property, $duration, $timingFunc) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timingFunc;
 }
