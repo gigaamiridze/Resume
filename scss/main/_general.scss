@@ -8,3 +8,18 @@
   background-color: $grey;
   opacity: 0.25;
 }
+
+.st0 {
+  fill: none;
+}
+
+.st1 {
+  fill: none;
+  stroke: $lightGrey;
+  stroke-width: 7;
+  stroke-miterlimit: 10;
+}
+
+.blue-stroke {
+  stroke: $blue;
+}

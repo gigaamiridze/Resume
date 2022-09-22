@@ -65,6 +65,21 @@ section .container, body header .container {
   opacity: 0.25;
 }
 
+.st0 {
+  fill: none;
+}
+
+.st1 {
+  fill: none;
+  stroke: #efefef;
+  stroke-width: 7;
+  stroke-miterlimit: 10;
+}
+
+.blue-stroke {
+  stroke: #3333ff;
+}
+
 body {
   padding-top: 84px;
 }
@@ -110,23 +125,23 @@ body header .container .flex-block nav ul li .nav-link:hover {
 section {
   padding: 40px 0;
 }
-section .container .info-block .flex-block {
+section .container .info-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-section .container .info-block .flex-block .about-me-info {
+section .container .info-block .about-me-info {
   max-width: 570px;
   width: 100%;
 }
-section .container .info-block .flex-block .about-me-info h2 {
+section .container .info-block .about-me-info h2 {
   font-size: 36px;
   font-family: "Lato", sans-serif;
   color: #333333;
   text-transform: none;
   font-weight: 700;
 }
-section .container .info-block .flex-block .about-me-info p {
+section .container .info-block .about-me-info p {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   color: #707070;
@@ -134,16 +149,16 @@ section .container .info-block .flex-block .about-me-info p {
   line-height: 1.5;
   margin: 10px 0 20px;
 }
-section .container .info-block .flex-block .about-me-info .info-group {
+section .container .info-block .about-me-info .info-group {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 15px;
 }
-section .container .info-block .flex-block .about-me-info .info-group:last-child {
+section .container .info-block .about-me-info .info-group:last-child {
   margin-bottom: 0;
 }
-section .container .info-block .flex-block .about-me-info .info-group .key {
+section .container .info-block .about-me-info .info-group .key {
   font-size: 12px;
   font-family: "Lato", sans-serif;
   color: #333333;
@@ -151,37 +166,37 @@ section .container .info-block .flex-block .about-me-info .info-group .key {
   font-weight: 700;
   width: 90px;
 }
-section .container .info-block .flex-block .about-me-info .info-group .phone, section .container .info-block .flex-block .about-me-info .info-group .email {
+section .container .info-block .about-me-info .info-group .phone, section .container .info-block .about-me-info .info-group .email {
   transition-property: color;
   transition-duration: 0.3s;
   transition-timing-function: ease;
 }
-section .container .info-block .flex-block .about-me-info .info-group .phone:hover, section .container .info-block .flex-block .about-me-info .info-group .email:hover {
+section .container .info-block .about-me-info .info-group .phone:hover, section .container .info-block .about-me-info .info-group .email:hover {
   color: #3333ff;
 }
-section .container .info-block .flex-block .about-me-info .info-group .value {
+section .container .info-block .about-me-info .info-group .value {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   color: #707070;
   text-transform: none;
 }
-section .container .info-block .flex-block .about-me-info .info-group .social-icons {
+section .container .info-block .about-me-info .info-group .social-icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 22px;
 }
-section .container .info-block .flex-block .about-me-info .info-group .social-icons i {
+section .container .info-block .about-me-info .info-group .social-icons i {
   font-size: 14px;
   color: #333333;
   transition-property: color;
   transition-duration: 0.3s;
   transition-timing-function: ease;
 }
-section .container .info-block .flex-block .about-me-info .info-group .social-icons i:hover {
+section .container .info-block .about-me-info .info-group .social-icons i:hover {
   color: #3333ff;
 }
-section .container .info-block .flex-block .my-img {
+section .container .info-block .my-img {
   max-width: 570px;
   width: 100%;
   height: 320px;

@@ -3,59 +3,57 @@ section {
   .container {
     @extend %container;
     .info-block {
-      .flex-block {
-        @include flex-property(space-between, center);
-        .about-me-info {
-          max-width: 570px;
-          width: 100%;
-          h2 {
-            @include text-property(36px, $lato, $black, none);
+      @include flex-property(space-between, center);
+      .about-me-info {
+        max-width: 570px;
+        width: 100%;
+        h2 {
+          @include text-property(36px, $lato, $black, none);
+          font-weight: $bold;
+        }
+        p {
+          @include text-property(16px, $roboto, $grey, none);
+          line-height: 1.5;
+          margin: 10px 0 20px;
+        }
+        .info-group {
+          @include flex-property(flex-start, center);
+          margin-bottom: 15px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          .key {
+            @include text-property(12px, $lato, $black, uppercase);
             font-weight: $bold;
+            width: 90px;
           }
-          p {
-            @include text-property(16px, $roboto, $grey, none);
-            line-height: 1.5;
-            margin: 10px 0 20px;
+          .phone, .email {
+            @include transition(color, 0.3s, ease);
+            &:hover {
+              color: $blue
+            }
           }
-          .info-group {
-            @include flex-property(flex-start, center);
-            margin-bottom: 15px;
-            &:last-child {
-              margin-bottom: 0;
-            }
-            .key {
-              @include text-property(12px, $lato, $black, uppercase);
-              font-weight: $bold;
-              width: 90px;
-            }
-            .phone, .email {
+          .value {
+            @include text-property(14px, $roboto, $grey, none);
+          }
+          .social-icons {
+            @include flex-property(space-between, center);
+            gap: 22px;
+            i {
+              font-size: 14px;
+              color: $black;
               @include transition(color, 0.3s, ease);
               &:hover {
-                color: $blue
-              }
-            }
-            .value {
-              @include text-property(14px, $roboto, $grey, none);
-            }
-            .social-icons {
-              @include flex-property(space-between, center);
-              gap: 22px;
-              i {
-                font-size: 14px;
-                color: $black;
-                @include transition(color, 0.3s, ease);
-                &:hover {
-                  color: $blue;
-                }
+                color: $blue;
               }
             }
           }
         }
-        .my-img {
-          @include sizes(570px, 100%, 320px);
-          object-fit: cover;
-          border-radius: 3px;
-        }
+      }
+      .my-img {
+        @include sizes(570px, 100%, 320px);
+        object-fit: cover;
+        border-radius: 3px;
       }
     }
   }
