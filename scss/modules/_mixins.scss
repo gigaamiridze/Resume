@@ -23,3 +23,9 @@
   transition-duration: $duration;
   transition-timing-function: $timingFunc;
 }
+
+@mixin sizes($max, $width, $height) {
+  max-width: $max;
+  width: $width;
+  height: $height;
+}

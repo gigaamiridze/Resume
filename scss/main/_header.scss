@@ -1,33 +1,33 @@
-header {
-  padding: 30px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: $white;
-  box-shadow: 0 5px 10px rgb(37 37 37 / 10%);
-  .container {
-    @extend %container;
-    .flex-block {
-      @include flex-property(space-between, center);
-      .name-title {
-        @include text-property(24px, $lato, $black, capitalize);
-        font-weight: $bold;
-        span {
-          color: $blue;
+body {
+  padding-top: 84px;
+  header {
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    box-shadow: 0 5px 10px rgb(37 37 37 / 10%);
+    .container {
+      @extend %container;
+      .flex-block {
+        @include flex-property(space-between, center);
+        .name-title {
+          @include text-property(24px, $lato, $black, capitalize);
+          font-weight: $bold;
         }
-      }
-      nav {
-        ul {
-          display: flex;
-          gap: 40px;
-          li {
-            .nav-link {
-              @include text-property(12px, $lato, $black, uppercase);
-              font-weight: $bold;
-              @include transition(color, 0.3s, ease);
-              &:hover {
-                color: $blue;
+        nav {
+          ul {
+            display: flex;
+            gap: 40px;
+            li {
+              .nav-link {
+                @include text-property(12px, $lato, $black, uppercase);
+                font-weight: $bold;
+                @include transition(color, 0.3s, ease);
+                &:hover {
+                  color: $blue;
+                }
               }
             }
           }
