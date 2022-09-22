@@ -54,6 +54,22 @@ section .container, body header .container {
   margin: 0 auto;
 }
 
+section .container .info-block .about-me-info .info-group .key, body header .container .flex-block nav ul li .nav-link {
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.right-side .horizontal-block .skills-box p, .left-side p, section .container .info-block .about-me-info p {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #707070;
+  text-transform: none;
+  line-height: 1.5;
+}
+
 .blue-point {
   color: #3333ff;
 }
@@ -109,11 +125,6 @@ body header .container .flex-block nav ul {
   gap: 40px;
 }
 body header .container .flex-block nav ul li .nav-link {
-  font-size: 12px;
-  font-family: "Lato", sans-serif;
-  color: #333333;
-  text-transform: uppercase;
-  font-weight: 700;
   transition-property: color;
   transition-duration: 0.3s;
   transition-timing-function: ease;
@@ -142,11 +153,6 @@ section .container .info-block .about-me-info h2 {
   font-weight: 700;
 }
 section .container .info-block .about-me-info p {
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  color: #707070;
-  text-transform: none;
-  line-height: 1.5;
   margin: 10px 0 20px;
 }
 section .container .info-block .about-me-info .info-group {
@@ -159,11 +165,6 @@ section .container .info-block .about-me-info .info-group:last-child {
   margin-bottom: 0;
 }
 section .container .info-block .about-me-info .info-group .key {
-  font-size: 12px;
-  font-family: "Lato", sans-serif;
-  color: #333333;
-  text-transform: uppercase;
-  font-weight: 700;
   width: 90px;
 }
 section .container .info-block .about-me-info .info-group .phone, section .container .info-block .about-me-info .info-group .email {
@@ -220,11 +221,6 @@ section .container .info-block .my-img {
   font-weight: 700;
 }
 .left-side p {
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  color: #707070;
-  text-transform: none;
-  line-height: 1.5;
   margin: 10px 0 80px;
 }
 .left-side .svg-box {
@@ -257,13 +253,6 @@ section .container .info-block .my-img {
   text-transform: capitalize;
   font-weight: 700;
   margin-bottom: 7px;
-}
-.right-side .horizontal-block .skills-box p {
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  color: #707070;
-  text-transform: none;
-  line-height: 1.5;
 }
 .right-side .horizontal-block .skills-box .divider-line {
   margin-top: 25px;

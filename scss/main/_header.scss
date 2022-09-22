@@ -22,8 +22,7 @@ body {
             gap: 40px;
             li {
               .nav-link {
-                @include text-property(12px, $lato, $black, uppercase);
-                font-weight: $bold;
+                @extend %black-small-text;
                 @include transition(color, 0.3s, ease);
                 &:hover {
                   color: $blue;

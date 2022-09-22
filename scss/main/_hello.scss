@@ -12,8 +12,7 @@ section {
           font-weight: $bold;
         }
         p {
-          @include text-property(16px, $roboto, $grey, none);
-          line-height: 1.5;
+          @extend %grey-paragraph;
           margin: 10px 0 20px;
         }
         .info-group {
@@ -23,8 +22,7 @@ section {
             margin-bottom: 0;
           }
           .key {
-            @include text-property(12px, $lato, $black, uppercase);
-            font-weight: $bold;
+            @extend %black-small-text;
             width: 90px;
           }
           .phone, .email {

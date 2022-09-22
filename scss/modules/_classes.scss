@@ -9,3 +9,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+%black-small-text {
+  @include text-property(12px, $lato, $black, uppercase);
+  font-weight: $bold;
+}
+
+%grey-paragraph {
+  @include text-property(16px, $roboto, $grey, none);
+  line-height: 1.5;
+}
