@@ -151,6 +151,14 @@ section .container .info-block .flex-block .about-me-info .info-group .key {
   font-weight: 700;
   width: 90px;
 }
+section .container .info-block .flex-block .about-me-info .info-group .phone, section .container .info-block .flex-block .about-me-info .info-group .email {
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+section .container .info-block .flex-block .about-me-info .info-group .phone:hover, section .container .info-block .flex-block .about-me-info .info-group .email:hover {
+  color: #3333ff;
+}
 section .container .info-block .flex-block .about-me-info .info-group .value {
   font-size: 14px;
   font-family: "Roboto", sans-serif;

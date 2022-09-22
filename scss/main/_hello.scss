@@ -28,6 +28,12 @@ section {
               font-weight: $bold;
               width: 90px;
             }
+            .phone, .email {
+              @include transition(color, 0.3s, ease);
+              &:hover {
+                color: $blue
+              }
+            }
             .value {
               @include text-property(14px, $roboto, $grey, none);
             }
