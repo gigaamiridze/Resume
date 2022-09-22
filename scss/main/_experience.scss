@@ -1,0 +1,26 @@
+.right-side {
+  .internship-block {
+    .flex-box {
+      @include flex-property(flex-start, center);
+      margin-bottom: 10px;
+      h3 {
+        @extend %black-middle-title;
+        margin-right: 10px;
+      }
+      span {
+        @extend %grey-title;
+      }
+    }
+    span {
+      @extend %grey-title;
+    }
+    p {
+      @extend %grey-paragraph;
+      font-style: italic;
+      margin-top: 15px;
+    }
+  } 
+  .divider-line {
+    margin: 25px 0;
+  } 
+}

@@ -1,4 +1,4 @@
-#skills {
+#skills, #experience {
   .info-block {
     align-items: flex-start;
   }
@@ -28,6 +28,8 @@
 }
 
 .right-side {
+  max-width: 760px;
+  width: 100%;
   .horizontal-block {
     display: flex;
     &:first-child {
@@ -39,8 +41,7 @@
         margin-right: 30px;
       }
       h3 {
-        @include text-property(18px, $lato, $black, capitalize);
-        font-weight: $bold;
+        @extend %black-middle-title;
         margin-bottom: 7px;
       }
       p {

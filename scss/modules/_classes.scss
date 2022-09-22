@@ -19,3 +19,12 @@
   @include text-property(16px, $roboto, $grey, none);
   line-height: 1.5;
 }
+
+%grey-title {
+  @include text-property(16px, $roboto, $grey, capitalize);
+}
+
+%black-middle-title {
+  @include text-property(18px, $lato, $black, capitalize);
+  font-weight: $bold;
+}
