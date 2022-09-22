@@ -203,3 +203,66 @@ section .container .info-block .my-img {
   object-fit: cover;
   border-radius: 3px;
 }
+
+#skills .info-block {
+  align-items: flex-start;
+}
+#skills .info-block .left-side {
+  max-width: 370px;
+  width: 100%;
+}
+#skills .info-block .left-side h2 {
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  color: #333333;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+#skills .info-block .left-side p {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #707070;
+  text-transform: none;
+  line-height: 1.5;
+  margin: 10px 0 80px;
+}
+#skills .info-block .left-side .svg-box {
+  display: flex;
+  flex-direction: column;
+}
+#skills .info-block .left-side .svg-box svg {
+  width: 105px;
+}
+#skills .info-block .left-side .svg-box svg:first-child {
+  margin-bottom: 7px;
+}
+#skills .info-block .right-side .horizontal-block {
+  display: flex;
+}
+#skills .info-block .right-side .horizontal-block:first-child {
+  margin-bottom: 25px;
+}
+#skills .info-block .right-side .horizontal-block .skills-box {
+  width: 365px;
+}
+#skills .info-block .right-side .horizontal-block .skills-box:first-child {
+  margin-right: 30px;
+}
+#skills .info-block .right-side .horizontal-block .skills-box h3 {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  color: #333333;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+#skills .info-block .right-side .horizontal-block .skills-box p {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #707070;
+  text-transform: none;
+  line-height: 1.5;
+}
+#skills .info-block .right-side .horizontal-block .skills-box .divider-line {
+  margin-top: 25px;
+}

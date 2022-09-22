@@ -1,0 +1,54 @@
+#skills {
+  .info-block {
+    align-items: flex-start;
+    .left-side {
+      max-width: 370px;
+      width: 100%;
+      h2 {
+        @include text-property(30px, $lato, $black, capitalize);
+        font-weight: $bold;
+      }
+      p {
+        @include text-property(16px, $roboto, $grey, none);
+        line-height: 1.5;
+        margin: 10px 0 80px;
+      }
+      .svg-box {
+        display: flex;
+        flex-direction: column;
+        svg {
+          width: 105px;
+          &:first-child {
+            margin-bottom: 7px;
+          }
+        }
+      }
+    }
+    .right-side {
+      .horizontal-block {
+        display: flex;
+        &:first-child {
+          margin-bottom: 25px;
+        }
+        .skills-box {
+          width: 365px;
+          &:first-child {
+            margin-right: 30px;
+          }
+          h3 {
+            @include text-property(18px, $lato, $black, capitalize);
+            font-weight: $bold;
+            margin-bottom: 7px;
+          }
+          p {
+            @include text-property(16px, $roboto, $grey, none);
+            line-height: 1.5;
+          }
+          .divider-line {
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+  }
+}
