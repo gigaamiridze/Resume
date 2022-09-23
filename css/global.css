@@ -85,6 +85,17 @@ section .container .info-block .about-me-info .info-group .key, body header .con
   font-weight: 700;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #efefef;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #b7b7b7;
+  border-radius: 5px;
+}
+
 .blue-point {
   color: #3333ff;
 }
