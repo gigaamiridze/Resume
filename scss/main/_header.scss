@@ -1,32 +1,38 @@
-body {
-  padding-top: 84px;
-  header {
-    padding: 30px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    background-color: $white;
-    box-shadow: 0 5px 10px rgb(37 37 37 / 10%);
-    .container {
-      @extend %container;
-      .flex-block {
-        @include flex-property(space-between, center);
-        .name-title {
-          @include text-property(24px, $lato, $black, capitalize);
-          font-weight: $bold;
-        }
-        nav {
-          ul {
-            display: flex;
-            gap: 40px;
-            li {
-              .nav-link {
-                @extend %black-small-text;
-                @include transition(color, 0.3s, ease);
-                &:hover {
-                  color: $blue;
+html {
+  scroll-behavior: smooth;
+  body {
+    padding-top: 84px;
+    header {
+      padding: 30px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      background-color: $white;
+      box-shadow: 0 5px 10px rgb(37 37 37 / 10%);
+      .container {
+        @extend %container;
+        .flex-block {
+          @include flex-property(space-between, center);
+          .name-title {
+            @include text-property(24px, $lato, $black, capitalize);
+            font-weight: $bold;
+          }
+          nav {
+            ul {
+              display: flex;
+              gap: 40px;
+              li {
+                .nav-link {
+                  @extend %black-small-text;
+                  @include transition(color, 0.3s, ease);
+                  &:hover {
+                    color: $blue;
+                  }
+                  &.active {
+                    color: $blue;
+                  }
                 }
               }
             }
