@@ -1,6 +1,7 @@
 #skills, #experience, #education, #languages {
   .info-block {
     align-items: flex-start;
+    position: relative;
   }
 }
 
@@ -13,11 +14,14 @@
   }
   p {
     @extend %grey-paragraph;
-    margin: 10px 0 80px;
+    margin-top: 10px;
   }
   .svg-box {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     svg {
       width: 105px;
       &:first-child {

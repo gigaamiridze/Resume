@@ -240,6 +240,7 @@ section .container .info-block .my-img {
 
 #skills .info-block, #experience .info-block, #education .info-block, #languages .info-block {
   align-items: flex-start;
+  position: relative;
 }
 
 .left-side {
@@ -254,11 +255,14 @@ section .container .info-block .my-img {
   font-weight: 700;
 }
 .left-side p {
-  margin: 10px 0 80px;
+  margin-top: 10px;
 }
 .left-side .svg-box {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .left-side .svg-box svg {
   width: 105px;
@@ -314,8 +318,8 @@ section .container .info-block .my-img {
   gap: 3px;
 }
 .circles-box div {
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   background-color: #3333ff;
   border-radius: 50%;
 }
