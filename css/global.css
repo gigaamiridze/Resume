@@ -238,7 +238,7 @@ section .container .info-block .my-img {
   border-radius: 3px;
 }
 
-#skills .info-block, #experience .info-block, #education .info-block {
+#skills .info-block, #experience .info-block, #education .info-block, #languages .info-block {
   align-items: flex-start;
 }
 
@@ -305,4 +305,17 @@ section .container .info-block .my-img {
 }
 .right-side .divider-line {
   margin: 25px 0;
+}
+
+.circles-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3px;
+}
+.circles-box div {
+  width: 20px;
+  height: 20px;
+  background-color: #3333ff;
+  border-radius: 50%;
 }

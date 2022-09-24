@@ -1,0 +1,10 @@
+.circles-box {
+  @include flex-property(flex-start, center);
+  gap: 3px;
+  div {
+    width: 20px;
+    height: 20px;
+    background-color: $blue;
+    border-radius: 50%;
+  }
+}
