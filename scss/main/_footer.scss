@@ -1,0 +1,8 @@
+footer {
+  background-color: $lightGrey;
+  padding: 17px 0;
+  p {
+    @include text-property(14px, $roboto, $grey, capitalize);
+    text-align: center;
+  }
+}

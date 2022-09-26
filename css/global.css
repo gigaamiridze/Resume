@@ -323,3 +323,15 @@ section .container .info-block .my-img {
   background-color: #3333ff;
   border-radius: 50%;
 }
+
+footer {
+  background-color: #efefef;
+  padding: 17px 0;
+}
+footer p {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #707070;
+  text-transform: capitalize;
+  text-align: center;
+}
