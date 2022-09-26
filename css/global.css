@@ -100,13 +100,6 @@ body::-webkit-scrollbar-thumb {
   color: #3333ff;
 }
 
-.divider-line {
-  width: 100%;
-  height: 0.5px;
-  background-color: #707070;
-  opacity: 0.25;
-}
-
 .st0 {
   fill: none;
 }
@@ -238,6 +231,9 @@ section .container .info-block .my-img {
   border-radius: 3px;
 }
 
+#skills, #experience, #education, #languages {
+  border-top: 1px solid #e3e3e3;
+}
 #skills .info-block, #experience .info-block, #education .info-block, #languages .info-block {
   align-items: flex-start;
   position: relative;
@@ -281,6 +277,12 @@ section .container .info-block .my-img {
 .right-side .horizontal-block:first-child {
   margin-bottom: 25px;
 }
+.right-side .horizontal-block:first-child .skills-box {
+  border-bottom: 1px solid #e3e3e3;
+}
+.right-side .horizontal-block:first-child .skills-box p {
+  padding-bottom: 25px;
+}
 .right-side .horizontal-block .skills-box {
   width: 365px;
 }
@@ -290,10 +292,17 @@ section .container .info-block .my-img {
 .right-side .horizontal-block .skills-box h3 {
   margin-bottom: 7px;
 }
-.right-side .horizontal-block .skills-box .divider-line {
-  margin-top: 25px;
+.right-side .internship-block {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e3e3e3;
 }
-
+.right-side .internship-block:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.right-side .internship-block:last-child p, .right-side .internship-block:last-child .circles-box {
+  padding-bottom: 0;
+}
 .right-side .internship-block .flex-box {
   display: flex;
   justify-content: flex-start;
@@ -306,9 +315,7 @@ section .container .info-block .my-img {
 .right-side .internship-block p {
   font-style: italic;
   margin-top: 15px;
-}
-.right-side .divider-line {
-  margin: 25px 0;
+  padding-bottom: 25px;
 }
 
 .circles-box {
@@ -316,6 +323,7 @@ section .container .info-block .my-img {
   justify-content: flex-start;
   align-items: center;
   gap: 3px;
+  padding-bottom: 25px;
 }
 .circles-box div {
   width: 17px;

@@ -1,6 +1,7 @@
 .circles-box {
   @include flex-property(flex-start, center);
   gap: 3px;
+  padding-bottom: 25px;
   div {
     width: 17px;
     height: 17px;
