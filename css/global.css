@@ -70,14 +70,14 @@ section .container, html body header .container {
   line-height: 1.5;
 }
 
-.right-side .internship-block span, .right-side .internship-block .flex-box span {
+.right-side .internship-block span, .right-side .internship-block .flex-box span, #portfolio .container .all-projects .project-box .project-date {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   color: #707070;
   text-transform: capitalize;
 }
 
-.right-side .internship-block .flex-box h3, .right-side .horizontal-block .skills-box h3 {
+.right-side .internship-block .flex-box h3, .right-side .horizontal-block .skills-box h3, #portfolio .container .all-projects .project-box .project-name {
   font-size: 18px;
   font-family: "Lato", sans-serif;
   color: #333333;
@@ -243,7 +243,7 @@ section .container .info-block .my-img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 20px 0;
+  margin: 30px 0 22px;
   gap: 40px;
 }
 #portfolio .container .categories li {
@@ -258,7 +258,44 @@ section .container .info-block .my-img {
 #portfolio .container .categories li.active {
   color: #3333ff;
 }
-
+#portfolio .container .all-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36.6px;
+}
+#portfolio .container .all-projects .project-box {
+  max-width: 270px;
+  width: 100%;
+  cursor: pointer;
+}
+#portfolio .container .all-projects .project-box:hover .project-img img {
+  transform: scale(1.2);
+}
+#portfolio .container .all-projects .project-box:hover .project-name {
+  color: #3333ff;
+}
+#portfolio .container .all-projects .project-box .project-img {
+  max-width: 100%;
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+}
+#portfolio .container .all-projects .project-box .project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+#portfolio .container .all-projects .project-box .project-name {
+  text-transform: none;
+  margin: 12px 0;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
 #skills, #experience, #education, #languages, #portfolio {
   border-top: 1px solid #e3e3e3;
 }
