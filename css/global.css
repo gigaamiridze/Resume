@@ -54,7 +54,7 @@ section .container, html body header .container {
   margin: 0 auto;
 }
 
-section .container .info-block .about-me-info .info-group .key, html body header .container .flex-block nav ul li .nav-link {
+#portfolio .container .categories li, section .container .info-block .about-me-info .info-group .key, html body header .container .flex-block nav ul li .nav-link {
   font-size: 12px;
   font-family: "Lato", sans-serif;
   color: #333333;
@@ -237,6 +237,26 @@ section .container .info-block .my-img {
   height: 320px;
   object-fit: cover;
   border-radius: 3px;
+}
+
+#portfolio .container .categories {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0;
+  gap: 40px;
+}
+#portfolio .container .categories li {
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+#portfolio .container .categories li:hover {
+  color: #3333ff;
+}
+#portfolio .container .categories li.active {
+  color: #3333ff;
 }
 
 #skills, #experience, #education, #languages, #portfolio {

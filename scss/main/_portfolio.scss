@@ -1,0 +1,20 @@
+#portfolio {
+  .container {
+    .categories {
+      @include flex-property(flex-start, center);
+      margin: 20px 0;
+      gap: 40px;
+      li {
+        @extend %black-small-text;
+        cursor: pointer;
+        @include transition(color, 0.3s, ease);
+        &:hover {
+          color: $blue;
+        }
+        &.active {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
