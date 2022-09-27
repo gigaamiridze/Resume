@@ -28,3 +28,8 @@
   @include text-property(18px, $lato, $black, capitalize);
   font-weight: $bold;
 }
+
+%section-main-title {
+  @include text-property(30px, $lato, $black, capitalize);
+  font-weight: $bold;
+}

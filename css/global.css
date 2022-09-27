@@ -85,6 +85,14 @@ section .container .info-block .about-me-info .info-group .key, html body header
   font-weight: 700;
 }
 
+.main-title {
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  color: #333333;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
 body::-webkit-scrollbar {
   width: 10px;
 }
@@ -231,10 +239,10 @@ section .container .info-block .my-img {
   border-radius: 3px;
 }
 
-#skills, #experience, #education, #languages {
+#skills, #experience, #education, #languages, #portfolio {
   border-top: 1px solid #e3e3e3;
 }
-#skills .info-block, #experience .info-block, #education .info-block, #languages .info-block {
+#skills .info-block, #experience .info-block, #education .info-block, #languages .info-block, #portfolio .info-block {
   align-items: flex-start;
   position: relative;
 }
@@ -242,13 +250,6 @@ section .container .info-block .my-img {
 .left-side {
   max-width: 370px;
   width: 100%;
-}
-.left-side h2 {
-  font-size: 30px;
-  font-family: "Lato", sans-serif;
-  color: #333333;
-  text-transform: capitalize;
-  font-weight: 700;
 }
 .left-side p {
   margin-top: 10px;

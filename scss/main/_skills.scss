@@ -1,4 +1,4 @@
-#skills, #experience, #education, #languages {
+#skills, #experience, #education, #languages, #portfolio {
   border-top: 1px solid $lightGrey1;
   .info-block {
     align-items: flex-start;
@@ -9,10 +9,6 @@
 .left-side {
   max-width: 370px;
   width: 100%;
-  h2 {
-    @include text-property(30px, $lato, $black, capitalize);
-    font-weight: $bold;
-  }
   p {
     @extend %grey-paragraph;
     margin-top: 10px;

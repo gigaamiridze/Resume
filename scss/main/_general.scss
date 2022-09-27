@@ -11,6 +11,11 @@ body {
   }
 }
 
+// Main title of sections
+.main-title {
+  @extend %section-main-title;
+}
+
 .blue-point {
   color: $blue; 
 }
