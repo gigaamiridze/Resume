@@ -126,9 +126,6 @@ body::-webkit-scrollbar-thumb {
 html {
   scroll-behavior: smooth;
 }
-html body {
-  padding-top: 84px;
-}
 html body header {
   padding: 30px 0;
   position: fixed;
@@ -165,6 +162,10 @@ html body header .container .flex-block nav ul li .nav-link:hover {
 }
 html body header .container .flex-block nav ul li .nav-link.active {
   color: #3333ff;
+}
+
+#hello {
+  padding-top: 124px;
 }
 
 section {
