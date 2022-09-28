@@ -40,6 +40,9 @@
             border-radius: 2px;
             @include transition(all, 0.3s, ease);
           }
+          .hortensia, .vaccine, .portfolio, .travel, .delux {
+            object-position: left;
+          }
         }
         .project-name {
           @extend %black-middle-title;

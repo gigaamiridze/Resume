@@ -289,6 +289,9 @@ section .container .info-block .my-img {
   transition-duration: 0.3s;
   transition-timing-function: ease;
 }
+#portfolio .container .all-projects .project-box .project-img .hortensia, #portfolio .container .all-projects .project-box .project-img .vaccine, #portfolio .container .all-projects .project-box .project-img .portfolio, #portfolio .container .all-projects .project-box .project-img .travel, #portfolio .container .all-projects .project-box .project-img .delux {
+  object-position: left;
+}
 #portfolio .container .all-projects .project-box .project-name {
   text-transform: none;
   margin: 12px 0;
