@@ -81,7 +81,7 @@ const allProjectItems = [
 
 const allProjects = document.querySelector('.all-projects');
 let boxContent = '';
-for (item of allProjectItems) {
+for (let item of allProjectItems) {
   boxContent += `
                 <div class="project-box">
                   <div class="project-img">
@@ -92,3 +92,4 @@ for (item of allProjectItems) {
                 </div>`;
 }
 allProjects.innerHTML = boxContent;
+allProjects.style.display = 'none';
