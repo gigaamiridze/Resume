@@ -18,15 +18,15 @@ const backProjectItems = [
     date: "May, 2022",
   },
   {
-    img: "./img/projects/manager.png",
-    className: "manager",
-    name: "Magazine Manager API",
-    date: "May, 2022",
-  },
-  {
     img: "./img/projects/genius.png",
     className: "genius",
     name: "Genius API",
+    date: "May, 2022",
+  },
+  {
+    img: "./img/projects/manager.png",
+    className: "manager",
+    name: "Magazine Manager API",
     date: "May, 2022",
   },
 ]
@@ -44,4 +44,3 @@ for (let item of backProjectItems) {
                 </div>`;
 }
 backProjects.innerHTML = backBoxContent;
-backProjects.style.display = 'none';

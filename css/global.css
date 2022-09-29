@@ -264,6 +264,16 @@ section .container .info-block .my-img {
   flex-wrap: wrap;
   gap: 36.6px;
 }
+#portfolio .container .all-projects.active, #portfolio .container .backend-projects.active, #portfolio .container .frontend-projects.active {
+  display: block;
+  display: flex;
+}
+#portfolio .container .all-projects.db, #portfolio .container .backend-projects.db, #portfolio .container .frontend-projects.db {
+  display: block;
+}
+#portfolio .container .all-projects.dn, #portfolio .container .backend-projects.dn, #portfolio .container .frontend-projects.dn {
+  display: none;
+}
 #portfolio .container .all-projects .project-box, #portfolio .container .backend-projects .project-box, #portfolio .container .frontend-projects .project-box {
   max-width: 270px;
   width: 100%;

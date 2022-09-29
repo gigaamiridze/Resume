@@ -92,4 +92,3 @@ for (let item of allProjectItems) {
                 </div>`;
 }
 allProjects.innerHTML = boxContent;
-allProjects.style.display = 'none';
