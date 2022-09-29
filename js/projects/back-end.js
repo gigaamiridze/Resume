@@ -44,3 +44,4 @@ for (let item of backProjectItems) {
                 </div>`;
 }
 backProjects.innerHTML = backBoxContent;
+backProjects.style.display = 'none';

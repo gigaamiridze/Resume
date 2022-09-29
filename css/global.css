@@ -70,14 +70,14 @@ section .container, html body header .container {
   line-height: 1.5;
 }
 
-.right-side .internship-block span, .right-side .internship-block .flex-box span, #portfolio .container .all-projects .project-box .project-date, #portfolio .container .backend-projects .project-box .project-date {
+.right-side .internship-block span, .right-side .internship-block .flex-box span, #portfolio .container .all-projects .project-box .project-date, #portfolio .container .backend-projects .project-box .project-date, #portfolio .container .frontend-projects .project-box .project-date {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   color: #707070;
   text-transform: capitalize;
 }
 
-.right-side .internship-block .flex-box h3, .right-side .horizontal-block .skills-box h3, #portfolio .container .all-projects .project-box .project-name, #portfolio .container .backend-projects .project-box .project-name {
+.right-side .internship-block .flex-box h3, .right-side .horizontal-block .skills-box h3, #portfolio .container .all-projects .project-box .project-name, #portfolio .container .backend-projects .project-box .project-name, #portfolio .container .frontend-projects .project-box .project-name {
   font-size: 18px;
   font-family: "Lato", sans-serif;
   color: #333333;
@@ -259,29 +259,29 @@ section .container .info-block .my-img {
 #portfolio .container .categories li.active {
   color: #3333ff;
 }
-#portfolio .container .all-projects, #portfolio .container .backend-projects {
+#portfolio .container .all-projects, #portfolio .container .backend-projects, #portfolio .container .frontend-projects {
   display: flex;
   flex-wrap: wrap;
   gap: 36.6px;
 }
-#portfolio .container .all-projects .project-box, #portfolio .container .backend-projects .project-box {
+#portfolio .container .all-projects .project-box, #portfolio .container .backend-projects .project-box, #portfolio .container .frontend-projects .project-box {
   max-width: 270px;
   width: 100%;
   cursor: pointer;
 }
-#portfolio .container .all-projects .project-box:hover .project-img img, #portfolio .container .backend-projects .project-box:hover .project-img img {
+#portfolio .container .all-projects .project-box:hover .project-img img, #portfolio .container .backend-projects .project-box:hover .project-img img, #portfolio .container .frontend-projects .project-box:hover .project-img img {
   transform: scale(1.2);
 }
-#portfolio .container .all-projects .project-box:hover .project-name, #portfolio .container .backend-projects .project-box:hover .project-name {
+#portfolio .container .all-projects .project-box:hover .project-name, #portfolio .container .backend-projects .project-box:hover .project-name, #portfolio .container .frontend-projects .project-box:hover .project-name {
   color: #3333ff;
 }
-#portfolio .container .all-projects .project-box .project-img, #portfolio .container .backend-projects .project-box .project-img {
+#portfolio .container .all-projects .project-box .project-img, #portfolio .container .backend-projects .project-box .project-img, #portfolio .container .frontend-projects .project-box .project-img {
   max-width: 100%;
   width: 100%;
   height: 270px;
   overflow: hidden;
 }
-#portfolio .container .all-projects .project-box .project-img img, #portfolio .container .backend-projects .project-box .project-img img {
+#portfolio .container .all-projects .project-box .project-img img, #portfolio .container .backend-projects .project-box .project-img img, #portfolio .container .frontend-projects .project-box .project-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -290,10 +290,10 @@ section .container .info-block .my-img {
   transition-duration: 0.3s;
   transition-timing-function: ease;
 }
-#portfolio .container .all-projects .project-box .project-img .hortensia, #portfolio .container .all-projects .project-box .project-img .vaccine, #portfolio .container .all-projects .project-box .project-img .portfolio, #portfolio .container .all-projects .project-box .project-img .travel, #portfolio .container .all-projects .project-box .project-img .delux, #portfolio .container .backend-projects .project-box .project-img .hortensia, #portfolio .container .backend-projects .project-box .project-img .vaccine, #portfolio .container .backend-projects .project-box .project-img .portfolio, #portfolio .container .backend-projects .project-box .project-img .travel, #portfolio .container .backend-projects .project-box .project-img .delux {
+#portfolio .container .all-projects .project-box .project-img .hortensia, #portfolio .container .all-projects .project-box .project-img .vaccine, #portfolio .container .all-projects .project-box .project-img .portfolio, #portfolio .container .all-projects .project-box .project-img .travel, #portfolio .container .all-projects .project-box .project-img .delux, #portfolio .container .backend-projects .project-box .project-img .hortensia, #portfolio .container .backend-projects .project-box .project-img .vaccine, #portfolio .container .backend-projects .project-box .project-img .portfolio, #portfolio .container .backend-projects .project-box .project-img .travel, #portfolio .container .backend-projects .project-box .project-img .delux, #portfolio .container .frontend-projects .project-box .project-img .hortensia, #portfolio .container .frontend-projects .project-box .project-img .vaccine, #portfolio .container .frontend-projects .project-box .project-img .portfolio, #portfolio .container .frontend-projects .project-box .project-img .travel, #portfolio .container .frontend-projects .project-box .project-img .delux {
   object-position: left;
 }
-#portfolio .container .all-projects .project-box .project-name, #portfolio .container .backend-projects .project-box .project-name {
+#portfolio .container .all-projects .project-box .project-name, #portfolio .container .backend-projects .project-box .project-name, #portfolio .container .frontend-projects .project-box .project-name {
   text-transform: none;
   margin: 12px 0;
   transition-property: all;
