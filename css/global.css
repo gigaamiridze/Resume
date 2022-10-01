@@ -54,7 +54,7 @@ section .container, html body header .container {
   margin: 0 auto;
 }
 
-#portfolio .container .categories li, section .container .info-block .about-me-info .info-group .key, html body header .container .flex-block nav ul li .nav-link {
+#portfolio .container .all-projects .project-box .modal .modal-btns .btn, #portfolio .container .backend-projects .project-box .modal .modal-btns .btn, #portfolio .container .frontend-projects .project-box .modal .modal-btns .btn, #portfolio .container .all-projects .project-box .modal .info .info-box h5, #portfolio .container .backend-projects .project-box .modal .info .info-box h5, #portfolio .container .frontend-projects .project-box .modal .info .info-box h5, #portfolio .container .categories li, section .container .info-block .about-me-info .info-group .key, html body header .container .flex-block nav ul li .nav-link {
   font-size: 12px;
   font-family: "Lato", sans-serif;
   color: #333333;
@@ -62,7 +62,14 @@ section .container, html body header .container {
   font-weight: 700;
 }
 
-.right-side .internship-block p, .right-side .horizontal-block .skills-box p, .left-side p, section .container .info-block .about-me-info p {
+#portfolio .container .all-projects .project-box .modal .info .info-box span, #portfolio .container .backend-projects .project-box .modal .info .info-box span, #portfolio .container .frontend-projects .project-box .modal .info .info-box span, section .container .info-block .about-me-info .info-group .value {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #707070;
+  text-transform: none;
+}
+
+.right-side .internship-block p, .right-side .horizontal-block .skills-box p, .left-side p, #portfolio .container .all-projects .project-box .modal .description, #portfolio .container .backend-projects .project-box .modal .description, #portfolio .container .frontend-projects .project-box .modal .description, section .container .info-block .about-me-info p {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   color: #707070;
@@ -90,6 +97,14 @@ section .container, html body header .container {
   font-family: "Lato", sans-serif;
   color: #333333;
   text-transform: capitalize;
+  font-weight: 700;
+}
+
+#portfolio .container .all-projects .project-box .modal .title, #portfolio .container .backend-projects .project-box .modal .title, #portfolio .container .frontend-projects .project-box .modal .title, section .container .info-block .about-me-info h2 {
+  font-size: 36px;
+  font-family: "Lato", sans-serif;
+  color: #333333;
+  text-transform: none;
   font-weight: 700;
 }
 
@@ -125,6 +140,9 @@ body::-webkit-scrollbar-thumb {
 
 html {
   scroll-behavior: smooth;
+}
+html body {
+  position: relative;
 }
 html body header {
   padding: 30px 0;
@@ -180,13 +198,6 @@ section .container .info-block .about-me-info {
   max-width: 570px;
   width: 100%;
 }
-section .container .info-block .about-me-info h2 {
-  font-size: 36px;
-  font-family: "Lato", sans-serif;
-  color: #333333;
-  text-transform: none;
-  font-weight: 700;
-}
 section .container .info-block .about-me-info p {
   margin: 10px 0 20px;
 }
@@ -209,12 +220,6 @@ section .container .info-block .about-me-info .info-group .phone, section .conta
 }
 section .container .info-block .about-me-info .info-group .phone:hover, section .container .info-block .about-me-info .info-group .email:hover {
   color: #3333ff;
-}
-section .container .info-block .about-me-info .info-group .value {
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
-  color: #707070;
-  text-transform: none;
 }
 section .container .info-block .about-me-info .info-group .social-icons {
   display: flex;
@@ -310,6 +315,72 @@ section .container .info-block .my-img {
   transition-duration: 0.3s;
   transition-timing-function: ease;
 }
+#portfolio .container .all-projects .project-box .modal, #portfolio .container .backend-projects .project-box .modal, #portfolio .container .frontend-projects .project-box .modal {
+  max-width: 850px;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 102;
+  padding: 40px;
+  border-radius: 3px;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, -2%);
+}
+#portfolio .container .all-projects .project-box .modal .description, #portfolio .container .backend-projects .project-box .modal .description, #portfolio .container .frontend-projects .project-box .modal .description {
+  margin: 5px 0 20px;
+}
+#portfolio .container .all-projects .project-box .modal .info .info-box, #portfolio .container .backend-projects .project-box .modal .info .info-box, #portfolio .container .frontend-projects .project-box .modal .info .info-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#portfolio .container .all-projects .project-box .modal .info .info-box:last-child, #portfolio .container .backend-projects .project-box .modal .info .info-box:last-child, #portfolio .container .frontend-projects .project-box .modal .info .info-box:last-child {
+  margin-top: 10px;
+}
+#portfolio .container .all-projects .project-box .modal .info .info-box:last-child span, #portfolio .container .backend-projects .project-box .modal .info .info-box:last-child span, #portfolio .container .frontend-projects .project-box .modal .info .info-box:last-child span {
+  text-transform: capitalize;
+}
+#portfolio .container .all-projects .project-box .modal .info .info-box h5, #portfolio .container .backend-projects .project-box .modal .info .info-box h5, #portfolio .container .frontend-projects .project-box .modal .info .info-box h5 {
+  width: 90px;
+}
+#portfolio .container .all-projects .project-box .modal .images, #portfolio .container .backend-projects .project-box .modal .images, #portfolio .container .frontend-projects .project-box .modal .images {
+  margin: 20px 0 25px;
+}
+#portfolio .container .all-projects .project-box .modal .images img, #portfolio .container .backend-projects .project-box .modal .images img, #portfolio .container .frontend-projects .project-box .modal .images img {
+  width: 100%;
+  height: 430px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+#portfolio .container .all-projects .project-box .modal .images img:first-child, #portfolio .container .backend-projects .project-box .modal .images img:first-child, #portfolio .container .frontend-projects .project-box .modal .images img:first-child {
+  margin-bottom: 20px;
+}
+#portfolio .container .all-projects .project-box .modal .modal-btns, #portfolio .container .backend-projects .project-box .modal .modal-btns, #portfolio .container .frontend-projects .project-box .modal .modal-btns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#portfolio .container .all-projects .project-box .modal .modal-btns .btn, #portfolio .container .backend-projects .project-box .modal .modal-btns .btn, #portfolio .container .frontend-projects .project-box .modal .modal-btns .btn {
+  max-width: 170px;
+  width: 100%;
+  height: 50px;
+  background-color: #3333ff;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio .container .all-projects .project-box .modal .modal-btns .btn:first-child, #portfolio .container .backend-projects .project-box .modal .modal-btns .btn:first-child, #portfolio .container .frontend-projects .project-box .modal .modal-btns .btn:first-child {
+  color: #ffffff;
+  margin-right: 30px;
+}
+#portfolio .container .all-projects .project-box .modal .modal-btns .btn:last-child, #portfolio .container .backend-projects .project-box .modal .modal-btns .btn:last-child, #portfolio .container .frontend-projects .project-box .modal .modal-btns .btn:last-child {
+  background-color: #efefef;
+}
+
 #skills, #experience, #education, #languages, #portfolio {
   border-top: 1px solid #e3e3e3;
 }

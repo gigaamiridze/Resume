@@ -15,6 +15,10 @@
   font-weight: $bold;
 }
 
+%grey-small-title {
+  @include text-property(14px, $roboto, $grey, none);
+}
+
 %grey-paragraph {
   @include text-property(16px, $roboto, $grey, none);
   line-height: 1.5;
@@ -31,5 +35,10 @@
 
 %section-main-title {
   @include text-property(30px, $lato, $black, capitalize);
+  font-weight: $bold;
+}
+
+%big-title {
+  @include text-property(36px, $lato, $black, none);
   font-weight: $bold;
 }

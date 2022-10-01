@@ -12,8 +12,7 @@ section {
         max-width: 570px;
         width: 100%;
         h2 {
-          @include text-property(36px, $lato, $black, none);
-          font-weight: $bold;
+          @extend %big-title;
         }
         p {
           @extend %grey-paragraph;
@@ -36,7 +35,7 @@ section {
             }
           }
           .value {
-            @include text-property(14px, $roboto, $grey, none);
+            @extend %grey-small-title;
           }
           .social-icons {
             @include flex-property(space-between, center);
