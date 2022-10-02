@@ -1,21 +1,31 @@
-const projectBox = document.querySelector('.project-box');
+const projectBoxes = document.querySelectorAll('.project-box');
+const closeBtns = document.querySelectorAll('.close-btn');
 const background = document.querySelector('.background');
-const closeBtn = document.querySelector('.close-btn');
-const modal = document.querySelector('.modal');
+const modals = document.querySelectorAll('.modal');
 
 // Show Modal and Background
-projectBox.addEventListener('click', () => {
-  modal.classList.add('db');
-  background.classList.add('db');
-})
+projectBoxes.forEach((box) => {
+  box.addEventListener('click', () => {
+    let modalID = box.getAttribute('data-modal');
+    let modal = document.getElementById(modalID);
+    modal.classList.add('db');
+    background.classList.add('db');
+  });
+});
 
 // Hide Modal and Background
-closeBtn.addEventListener('click', () => {
-  modal.classList.remove('db');
-  background.classList.remove('db');
-})
+closeBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    let modal = (btn.closest('.modal'));
+    modal.classList.remove('db');
+    background.classList.remove('db');
+  });
+});
 
+// Outside Click
 background.addEventListener('click', () => {
-  modal.classList.remove('db');
+  modals.forEach((modal) => {
+    modal.classList.remove('db');
+  });
   background.classList.remove('db');
-})
+});
