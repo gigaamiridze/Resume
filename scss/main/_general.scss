@@ -21,6 +21,14 @@ body {
   display: none;
 }
 
+.db {
+  display: block;
+}
+
+.dn {
+  display: none;
+}
+
 // Main title of sections
 .main-title {
   @extend %section-main-title;

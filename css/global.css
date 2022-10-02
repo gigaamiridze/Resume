@@ -54,7 +54,7 @@ section .container, html body header .container {
   margin: 0 auto;
 }
 
-#portfolio .container .all-projects .project-box .modal .modal-btns .btn, #portfolio .container .backend-projects .project-box .modal .modal-btns .btn, #portfolio .container .frontend-projects .project-box .modal .modal-btns .btn, #portfolio .container .all-projects .project-box .modal .info .info-box h5, #portfolio .container .backend-projects .project-box .modal .info .info-box h5, #portfolio .container .frontend-projects .project-box .modal .info .info-box h5, #portfolio .container .categories li, section .container .info-block .about-me-info .info-group .key, html body header .container .flex-block nav ul li .nav-link {
+#portfolio .container .all-projects .project-content .modal .modal-btns .btn, #portfolio .container .backend-projects .project-content .modal .modal-btns .btn, #portfolio .container .frontend-projects .project-content .modal .modal-btns .btn, #portfolio .container .all-projects .project-content .modal .info .info-box h5, #portfolio .container .backend-projects .project-content .modal .info .info-box h5, #portfolio .container .frontend-projects .project-content .modal .info .info-box h5, #portfolio .container .categories li, section .container .info-block .about-me-info .info-group .key, html body header .container .flex-block nav ul li .nav-link {
   font-size: 12px;
   font-family: "Lato", sans-serif;
   color: #333333;
@@ -62,14 +62,14 @@ section .container, html body header .container {
   font-weight: 700;
 }
 
-#portfolio .container .all-projects .project-box .modal .info .info-box span, #portfolio .container .backend-projects .project-box .modal .info .info-box span, #portfolio .container .frontend-projects .project-box .modal .info .info-box span, section .container .info-block .about-me-info .info-group .value {
+#portfolio .container .all-projects .project-content .modal .info .info-box span, #portfolio .container .backend-projects .project-content .modal .info .info-box span, #portfolio .container .frontend-projects .project-content .modal .info .info-box span, section .container .info-block .about-me-info .info-group .value {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   color: #707070;
   text-transform: none;
 }
 
-.right-side .internship-block p, .right-side .horizontal-block .skills-box p, .left-side p, #portfolio .container .all-projects .project-box .modal .description, #portfolio .container .backend-projects .project-box .modal .description, #portfolio .container .frontend-projects .project-box .modal .description, section .container .info-block .about-me-info p {
+.right-side .internship-block p, .right-side .horizontal-block .skills-box p, .left-side p, #portfolio .container .all-projects .project-content .modal .description, #portfolio .container .backend-projects .project-content .modal .description, #portfolio .container .frontend-projects .project-content .modal .description, section .container .info-block .about-me-info p {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   color: #707070;
@@ -77,14 +77,14 @@ section .container, html body header .container {
   line-height: 1.5;
 }
 
-.right-side .internship-block span, .right-side .internship-block .flex-box span, #portfolio .container .all-projects .project-box .project-date, #portfolio .container .backend-projects .project-box .project-date, #portfolio .container .frontend-projects .project-box .project-date {
+.right-side .internship-block span, .right-side .internship-block .flex-box span, #portfolio .container .all-projects .project-content .project-box .project-date, #portfolio .container .backend-projects .project-content .project-box .project-date, #portfolio .container .frontend-projects .project-content .project-box .project-date {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   color: #707070;
   text-transform: capitalize;
 }
 
-.right-side .internship-block .flex-box h3, .right-side .horizontal-block .skills-box h3, #portfolio .container .all-projects .project-box .project-name, #portfolio .container .backend-projects .project-box .project-name, #portfolio .container .frontend-projects .project-box .project-name {
+.right-side .internship-block .flex-box h3, .right-side .horizontal-block .skills-box h3, #portfolio .container .all-projects .project-content .project-box .project-name, #portfolio .container .backend-projects .project-content .project-box .project-name, #portfolio .container .frontend-projects .project-content .project-box .project-name {
   font-size: 18px;
   font-family: "Lato", sans-serif;
   color: #333333;
@@ -100,7 +100,7 @@ section .container, html body header .container {
   font-weight: 700;
 }
 
-#portfolio .container .all-projects .project-box .modal .title, #portfolio .container .backend-projects .project-box .modal .title, #portfolio .container .frontend-projects .project-box .modal .title, section .container .info-block .about-me-info h2 {
+#portfolio .container .all-projects .project-content .modal .title, #portfolio .container .backend-projects .project-content .modal .title, #portfolio .container .frontend-projects .project-content .modal .title, section .container .info-block .about-me-info h2 {
   font-size: 36px;
   font-family: "Lato", sans-serif;
   color: #333333;
@@ -129,6 +129,14 @@ body::-webkit-scrollbar-thumb {
   background-color: #333333;
   z-index: 101;
   opacity: 0.7;
+  display: none;
+}
+
+.db {
+  display: block;
+}
+
+.dn {
   display: none;
 }
 
@@ -295,24 +303,24 @@ section .container .info-block .my-img {
 #portfolio .container .all-projects.dn, #portfolio .container .backend-projects.dn, #portfolio .container .frontend-projects.dn {
   display: none;
 }
-#portfolio .container .all-projects .project-box, #portfolio .container .backend-projects .project-box, #portfolio .container .frontend-projects .project-box {
+#portfolio .container .all-projects .project-content .project-box, #portfolio .container .backend-projects .project-content .project-box, #portfolio .container .frontend-projects .project-content .project-box {
   max-width: 270px;
   width: 100%;
   cursor: pointer;
 }
-#portfolio .container .all-projects .project-box:hover .project-img img, #portfolio .container .backend-projects .project-box:hover .project-img img, #portfolio .container .frontend-projects .project-box:hover .project-img img {
+#portfolio .container .all-projects .project-content .project-box:hover .project-img img, #portfolio .container .backend-projects .project-content .project-box:hover .project-img img, #portfolio .container .frontend-projects .project-content .project-box:hover .project-img img {
   transform: scale(1.2);
 }
-#portfolio .container .all-projects .project-box:hover .project-name, #portfolio .container .backend-projects .project-box:hover .project-name, #portfolio .container .frontend-projects .project-box:hover .project-name {
+#portfolio .container .all-projects .project-content .project-box:hover .project-name, #portfolio .container .backend-projects .project-content .project-box:hover .project-name, #portfolio .container .frontend-projects .project-content .project-box:hover .project-name {
   color: #3333ff;
 }
-#portfolio .container .all-projects .project-box .project-img, #portfolio .container .backend-projects .project-box .project-img, #portfolio .container .frontend-projects .project-box .project-img {
+#portfolio .container .all-projects .project-content .project-box .project-img, #portfolio .container .backend-projects .project-content .project-box .project-img, #portfolio .container .frontend-projects .project-content .project-box .project-img {
   max-width: 100%;
   width: 100%;
   height: 270px;
   overflow: hidden;
 }
-#portfolio .container .all-projects .project-box .project-img img, #portfolio .container .backend-projects .project-box .project-img img, #portfolio .container .frontend-projects .project-box .project-img img {
+#portfolio .container .all-projects .project-content .project-box .project-img img, #portfolio .container .backend-projects .project-content .project-box .project-img img, #portfolio .container .frontend-projects .project-content .project-box .project-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -321,17 +329,17 @@ section .container .info-block .my-img {
   transition-duration: 0.3s;
   transition-timing-function: ease;
 }
-#portfolio .container .all-projects .project-box .project-img .hortensia, #portfolio .container .all-projects .project-box .project-img .vaccine, #portfolio .container .all-projects .project-box .project-img .portfolio, #portfolio .container .all-projects .project-box .project-img .travel, #portfolio .container .all-projects .project-box .project-img .delux, #portfolio .container .backend-projects .project-box .project-img .hortensia, #portfolio .container .backend-projects .project-box .project-img .vaccine, #portfolio .container .backend-projects .project-box .project-img .portfolio, #portfolio .container .backend-projects .project-box .project-img .travel, #portfolio .container .backend-projects .project-box .project-img .delux, #portfolio .container .frontend-projects .project-box .project-img .hortensia, #portfolio .container .frontend-projects .project-box .project-img .vaccine, #portfolio .container .frontend-projects .project-box .project-img .portfolio, #portfolio .container .frontend-projects .project-box .project-img .travel, #portfolio .container .frontend-projects .project-box .project-img .delux {
+#portfolio .container .all-projects .project-content .project-box .project-img .hortensia, #portfolio .container .all-projects .project-content .project-box .project-img .vaccine, #portfolio .container .all-projects .project-content .project-box .project-img .portfolio, #portfolio .container .all-projects .project-content .project-box .project-img .travel, #portfolio .container .all-projects .project-content .project-box .project-img .delux, #portfolio .container .backend-projects .project-content .project-box .project-img .hortensia, #portfolio .container .backend-projects .project-content .project-box .project-img .vaccine, #portfolio .container .backend-projects .project-content .project-box .project-img .portfolio, #portfolio .container .backend-projects .project-content .project-box .project-img .travel, #portfolio .container .backend-projects .project-content .project-box .project-img .delux, #portfolio .container .frontend-projects .project-content .project-box .project-img .hortensia, #portfolio .container .frontend-projects .project-content .project-box .project-img .vaccine, #portfolio .container .frontend-projects .project-content .project-box .project-img .portfolio, #portfolio .container .frontend-projects .project-content .project-box .project-img .travel, #portfolio .container .frontend-projects .project-content .project-box .project-img .delux {
   object-position: left;
 }
-#portfolio .container .all-projects .project-box .project-name, #portfolio .container .backend-projects .project-box .project-name, #portfolio .container .frontend-projects .project-box .project-name {
+#portfolio .container .all-projects .project-content .project-box .project-name, #portfolio .container .backend-projects .project-content .project-box .project-name, #portfolio .container .frontend-projects .project-content .project-box .project-name {
   text-transform: none;
   margin: 12px 0;
   transition-property: all;
   transition-duration: 0.3s;
   transition-timing-function: ease;
 }
-#portfolio .container .all-projects .project-box .modal, #portfolio .container .backend-projects .project-box .modal, #portfolio .container .frontend-projects .project-box .modal {
+#portfolio .container .all-projects .project-content .modal, #portfolio .container .backend-projects .project-content .modal, #portfolio .container .frontend-projects .project-content .modal {
   max-width: 850px;
   width: 100%;
   background-color: #ffffff;
@@ -346,41 +354,47 @@ section .container .info-block .my-img {
   left: 50%;
   transform: translate(-50%, 13%);
 }
-#portfolio .container .all-projects .project-box .modal .description, #portfolio .container .backend-projects .project-box .modal .description, #portfolio .container .frontend-projects .project-box .modal .description {
+#portfolio .container .all-projects .project-content .modal.db, #portfolio .container .backend-projects .project-content .modal.db, #portfolio .container .frontend-projects .project-content .modal.db {
+  display: block;
+}
+#portfolio .container .all-projects .project-content .modal.dn, #portfolio .container .backend-projects .project-content .modal.dn, #portfolio .container .frontend-projects .project-content .modal.dn {
+  display: none;
+}
+#portfolio .container .all-projects .project-content .modal .description, #portfolio .container .backend-projects .project-content .modal .description, #portfolio .container .frontend-projects .project-content .modal .description {
   margin: 5px 0 20px;
 }
-#portfolio .container .all-projects .project-box .modal .info .info-box, #portfolio .container .backend-projects .project-box .modal .info .info-box, #portfolio .container .frontend-projects .project-box .modal .info .info-box {
+#portfolio .container .all-projects .project-content .modal .info .info-box, #portfolio .container .backend-projects .project-content .modal .info .info-box, #portfolio .container .frontend-projects .project-content .modal .info .info-box {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-#portfolio .container .all-projects .project-box .modal .info .info-box:last-child, #portfolio .container .backend-projects .project-box .modal .info .info-box:last-child, #portfolio .container .frontend-projects .project-box .modal .info .info-box:last-child {
+#portfolio .container .all-projects .project-content .modal .info .info-box:last-child, #portfolio .container .backend-projects .project-content .modal .info .info-box:last-child, #portfolio .container .frontend-projects .project-content .modal .info .info-box:last-child {
   margin-top: 10px;
 }
-#portfolio .container .all-projects .project-box .modal .info .info-box:last-child span, #portfolio .container .backend-projects .project-box .modal .info .info-box:last-child span, #portfolio .container .frontend-projects .project-box .modal .info .info-box:last-child span {
+#portfolio .container .all-projects .project-content .modal .info .info-box:last-child span, #portfolio .container .backend-projects .project-content .modal .info .info-box:last-child span, #portfolio .container .frontend-projects .project-content .modal .info .info-box:last-child span {
   text-transform: capitalize;
 }
-#portfolio .container .all-projects .project-box .modal .info .info-box h5, #portfolio .container .backend-projects .project-box .modal .info .info-box h5, #portfolio .container .frontend-projects .project-box .modal .info .info-box h5 {
+#portfolio .container .all-projects .project-content .modal .info .info-box h5, #portfolio .container .backend-projects .project-content .modal .info .info-box h5, #portfolio .container .frontend-projects .project-content .modal .info .info-box h5 {
   width: 90px;
 }
-#portfolio .container .all-projects .project-box .modal .images, #portfolio .container .backend-projects .project-box .modal .images, #portfolio .container .frontend-projects .project-box .modal .images {
+#portfolio .container .all-projects .project-content .modal .images, #portfolio .container .backend-projects .project-content .modal .images, #portfolio .container .frontend-projects .project-content .modal .images {
   margin: 20px 0 25px;
 }
-#portfolio .container .all-projects .project-box .modal .images img, #portfolio .container .backend-projects .project-box .modal .images img, #portfolio .container .frontend-projects .project-box .modal .images img {
+#portfolio .container .all-projects .project-content .modal .images img, #portfolio .container .backend-projects .project-content .modal .images img, #portfolio .container .frontend-projects .project-content .modal .images img {
   width: 100%;
   height: 430px;
   border-radius: 3px;
   object-fit: cover;
 }
-#portfolio .container .all-projects .project-box .modal .images img:first-child, #portfolio .container .backend-projects .project-box .modal .images img:first-child, #portfolio .container .frontend-projects .project-box .modal .images img:first-child {
+#portfolio .container .all-projects .project-content .modal .images img:first-child, #portfolio .container .backend-projects .project-content .modal .images img:first-child, #portfolio .container .frontend-projects .project-content .modal .images img:first-child {
   margin-bottom: 20px;
 }
-#portfolio .container .all-projects .project-box .modal .modal-btns, #portfolio .container .backend-projects .project-box .modal .modal-btns, #portfolio .container .frontend-projects .project-box .modal .modal-btns {
+#portfolio .container .all-projects .project-content .modal .modal-btns, #portfolio .container .backend-projects .project-content .modal .modal-btns, #portfolio .container .frontend-projects .project-content .modal .modal-btns {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-#portfolio .container .all-projects .project-box .modal .modal-btns .btn, #portfolio .container .backend-projects .project-box .modal .modal-btns .btn, #portfolio .container .frontend-projects .project-box .modal .modal-btns .btn {
+#portfolio .container .all-projects .project-content .modal .modal-btns .btn, #portfolio .container .backend-projects .project-content .modal .modal-btns .btn, #portfolio .container .frontend-projects .project-content .modal .modal-btns .btn {
   max-width: 170px;
   width: 100%;
   height: 50px;
@@ -395,17 +409,17 @@ section .container .info-block .my-img {
   transition-duration: 0.3s;
   transition-timing-function: ease;
 }
-#portfolio .container .all-projects .project-box .modal .modal-btns .btn:first-child, #portfolio .container .backend-projects .project-box .modal .modal-btns .btn:first-child, #portfolio .container .frontend-projects .project-box .modal .modal-btns .btn:first-child {
+#portfolio .container .all-projects .project-content .modal .modal-btns .btn:first-child, #portfolio .container .backend-projects .project-content .modal .modal-btns .btn:first-child, #portfolio .container .frontend-projects .project-content .modal .modal-btns .btn:first-child {
   color: #ffffff;
   margin-right: 30px;
 }
-#portfolio .container .all-projects .project-box .modal .modal-btns .btn:first-child:hover, #portfolio .container .backend-projects .project-box .modal .modal-btns .btn:first-child:hover, #portfolio .container .frontend-projects .project-box .modal .modal-btns .btn:first-child:hover {
+#portfolio .container .all-projects .project-content .modal .modal-btns .btn:first-child:hover, #portfolio .container .backend-projects .project-content .modal .modal-btns .btn:first-child:hover, #portfolio .container .frontend-projects .project-content .modal .modal-btns .btn:first-child:hover {
   box-shadow: 10px 10px 20px rgba(51, 51, 255, 0.2);
 }
-#portfolio .container .all-projects .project-box .modal .modal-btns .btn:last-child, #portfolio .container .backend-projects .project-box .modal .modal-btns .btn:last-child, #portfolio .container .frontend-projects .project-box .modal .modal-btns .btn:last-child {
+#portfolio .container .all-projects .project-content .modal .modal-btns .btn:last-child, #portfolio .container .backend-projects .project-content .modal .modal-btns .btn:last-child, #portfolio .container .frontend-projects .project-content .modal .modal-btns .btn:last-child {
   background-color: #efefef;
 }
-#portfolio .container .all-projects .project-box .modal .modal-btns .btn:last-child:hover, #portfolio .container .backend-projects .project-box .modal .modal-btns .btn:last-child:hover, #portfolio .container .frontend-projects .project-box .modal .modal-btns .btn:last-child:hover {
+#portfolio .container .all-projects .project-content .modal .modal-btns .btn:last-child:hover, #portfolio .container .backend-projects .project-content .modal .modal-btns .btn:last-child:hover, #portfolio .container .frontend-projects .project-content .modal .modal-btns .btn:last-child:hover {
   box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
 }
 
