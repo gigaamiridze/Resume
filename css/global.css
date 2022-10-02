@@ -258,6 +258,9 @@ section .container .info-block .my-img {
   border-radius: 3px;
 }
 
+#portfolio {
+  position: relative;
+}
 #portfolio .container .categories {
   display: flex;
   justify-content: flex-start;
@@ -335,11 +338,13 @@ section .container .info-block .my-img {
   z-index: 102;
   padding: 40px;
   border-radius: 3px;
+  display: none;
   cursor: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 2%;
+  top: -13%;
   left: 50%;
-  transform: translate(-50%, -2%);
+  transform: translate(-50%, 13%);
 }
 #portfolio .container .all-projects .project-box .modal .description, #portfolio .container .backend-projects .project-box .modal .description, #portfolio .container .frontend-projects .project-box .modal .description {
   margin: 5px 0 20px;
