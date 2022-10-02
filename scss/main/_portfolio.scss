@@ -76,10 +76,10 @@
           cursor: auto;
           box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
           position: fixed;
-          top: 4%;
-          bottom: 4%;
+          top: -95%;
           left: 50%;
           transform: translateX(-50%);
+          animation: drop 0.3s linear forwards;
           &.db {
             display: block;
           }
