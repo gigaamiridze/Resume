@@ -396,6 +396,9 @@ section .container .info-block .my-img {
   justify-content: flex-start;
   align-items: center;
 }
+#portfolio .container .all-projects .project-content .modal .info .info-box:first-child span, #portfolio .container .backend-projects .project-content .modal .info .info-box:first-child span, #portfolio .container .frontend-projects .project-content .modal .info .info-box:first-child span {
+  line-height: 1.3;
+}
 #portfolio .container .all-projects .project-content .modal .info .info-box:last-child, #portfolio .container .backend-projects .project-content .modal .info .info-box:last-child, #portfolio .container .frontend-projects .project-content .modal .info .info-box:last-child {
   margin-top: 10px;
 }
@@ -403,7 +406,10 @@ section .container .info-block .my-img {
   text-transform: capitalize;
 }
 #portfolio .container .all-projects .project-content .modal .info .info-box h5, #portfolio .container .backend-projects .project-content .modal .info .info-box h5, #portfolio .container .frontend-projects .project-content .modal .info .info-box h5 {
-  width: 90px;
+  width: 75px;
+}
+#portfolio .container .all-projects .project-content .modal .info .info-box span, #portfolio .container .backend-projects .project-content .modal .info .info-box span, #portfolio .container .frontend-projects .project-content .modal .info .info-box span {
+  width: 100%;
 }
 #portfolio .container .all-projects .project-content .modal .images, #portfolio .container .backend-projects .project-content .modal .images, #portfolio .container .frontend-projects .project-content .modal .images {
   margin: 20px 0;
