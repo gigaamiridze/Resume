@@ -2,6 +2,9 @@ html {
   scroll-behavior: smooth;
   body {
     position: relative;
+    &.modal-open {
+      overflow-y: hidden;
+    }
     header {
       padding: 30px 0;
       position: fixed;

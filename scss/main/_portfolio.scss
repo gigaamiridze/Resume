@@ -1,5 +1,4 @@
 #portfolio {
-  position: relative;
   .container {
     .categories {
       @include flex-property(flex-start, center);
@@ -71,12 +70,16 @@
           width: 100%;
           background-color: $white;
           z-index: 102;
-          padding: 40px;
+          padding: 30px;
           border-radius: 3px;
           display: none;
           cursor: auto;
           box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
-          @include positions(50%, -13%);
+          position: fixed;
+          top: 4%;
+          bottom: 4%;
+          left: 50%;
+          transform: translateX(-50%);
           &.db {
             display: block;
           }
@@ -85,10 +88,11 @@
           }
           .title {
             @extend %big-title;
+            font-size: 30px;
           }
           .description {
             @extend %grey-paragraph;
-            margin: 5px 0 20px;
+            margin: 5px 0 15px;
           }
           .info {
             .info-box {
@@ -109,21 +113,19 @@
             }
           }
           .images {
-            margin: 20px 0 25px;
+            margin: 20px 0;
+            @include flex-property(space-between, flex-start);
             img {
-              width: 100%;
-              height: 430px;
+              width: 48.7%;
+              height: 260px;
               border-radius: 3px;
               object-fit: cover;
-              &:first-child {
-                margin-bottom: 20px;
-              }
             }
           }
           .modal-btns {
             @include flex-property(flex-start, center);
             .btn {
-              @include sizes(170px, 100%, 50px);
+              @include sizes(150px, 100%, 40px);
               background-color: $blue;
               border-radius: 2px;
               border: none;

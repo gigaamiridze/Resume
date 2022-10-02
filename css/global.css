@@ -165,6 +165,9 @@ html {
 html body {
   position: relative;
 }
+html body.modal-open {
+  overflow-y: hidden;
+}
 html body header {
   padding: 30px 0;
   position: fixed;
@@ -266,9 +269,6 @@ section .container .info-block .my-img {
   border-radius: 3px;
 }
 
-#portfolio {
-  position: relative;
-}
 #portfolio .container .categories {
   display: flex;
   justify-content: flex-start;
@@ -344,15 +344,16 @@ section .container .info-block .my-img {
   width: 100%;
   background-color: #ffffff;
   z-index: 102;
-  padding: 40px;
+  padding: 30px;
   border-radius: 3px;
   display: none;
   cursor: auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: -13%;
+  position: fixed;
+  top: 4%;
+  bottom: 4%;
   left: 50%;
-  transform: translate(-50%, 13%);
+  transform: translateX(-50%);
 }
 #portfolio .container .all-projects .project-content .modal.db, #portfolio .container .backend-projects .project-content .modal.db, #portfolio .container .frontend-projects .project-content .modal.db {
   display: block;
@@ -360,8 +361,11 @@ section .container .info-block .my-img {
 #portfolio .container .all-projects .project-content .modal.dn, #portfolio .container .backend-projects .project-content .modal.dn, #portfolio .container .frontend-projects .project-content .modal.dn {
   display: none;
 }
+#portfolio .container .all-projects .project-content .modal .title, #portfolio .container .backend-projects .project-content .modal .title, #portfolio .container .frontend-projects .project-content .modal .title {
+  font-size: 30px;
+}
 #portfolio .container .all-projects .project-content .modal .description, #portfolio .container .backend-projects .project-content .modal .description, #portfolio .container .frontend-projects .project-content .modal .description {
-  margin: 5px 0 20px;
+  margin: 5px 0 15px;
 }
 #portfolio .container .all-projects .project-content .modal .info .info-box, #portfolio .container .backend-projects .project-content .modal .info .info-box, #portfolio .container .frontend-projects .project-content .modal .info .info-box {
   display: flex;
@@ -378,16 +382,16 @@ section .container .info-block .my-img {
   width: 90px;
 }
 #portfolio .container .all-projects .project-content .modal .images, #portfolio .container .backend-projects .project-content .modal .images, #portfolio .container .frontend-projects .project-content .modal .images {
-  margin: 20px 0 25px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 #portfolio .container .all-projects .project-content .modal .images img, #portfolio .container .backend-projects .project-content .modal .images img, #portfolio .container .frontend-projects .project-content .modal .images img {
-  width: 100%;
-  height: 430px;
+  width: 48.7%;
+  height: 260px;
   border-radius: 3px;
   object-fit: cover;
-}
-#portfolio .container .all-projects .project-content .modal .images img:first-child, #portfolio .container .backend-projects .project-content .modal .images img:first-child, #portfolio .container .frontend-projects .project-content .modal .images img:first-child {
-  margin-bottom: 20px;
 }
 #portfolio .container .all-projects .project-content .modal .modal-btns, #portfolio .container .backend-projects .project-content .modal .modal-btns, #portfolio .container .frontend-projects .project-content .modal .modal-btns {
   display: flex;
@@ -395,9 +399,9 @@ section .container .info-block .my-img {
   align-items: center;
 }
 #portfolio .container .all-projects .project-content .modal .modal-btns .btn, #portfolio .container .backend-projects .project-content .modal .modal-btns .btn, #portfolio .container .frontend-projects .project-content .modal .modal-btns .btn {
-  max-width: 170px;
+  max-width: 150px;
   width: 100%;
-  height: 50px;
+  height: 40px;
   background-color: #3333ff;
   border-radius: 2px;
   border: none;
