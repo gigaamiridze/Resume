@@ -78,7 +78,7 @@
           position: fixed;
           top: -95%;
           left: 50%;
-          transform: translateX(-50%);
+          transform: translate(-50%, -50%);
           animation: drop 0.3s linear forwards;
           &.db {
             display: block;
@@ -123,7 +123,7 @@
             @include flex-property(space-between, flex-start);
             img {
               width: 48.7%;
-              height: 260px;
+              height: 213px;
               border-radius: 3px;
               object-fit: cover;
             }

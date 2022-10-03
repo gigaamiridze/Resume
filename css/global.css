@@ -113,10 +113,10 @@ section .container, html body header .container {
     opacity: 0;
   }
   70% {
-    top: -10%;
+    top: 20%;
   }
   100% {
-    top: 4%;
+    top: 50%;
     opacity: 1;
   }
 }
@@ -376,7 +376,7 @@ section .container .info-block .my-img {
   position: fixed;
   top: -95%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   animation: drop 0.3s linear forwards;
 }
 #portfolio .container .all-projects .project-content .modal.db, #portfolio .container .backend-projects .project-content .modal.db, #portfolio .container .frontend-projects .project-content .modal.db {
@@ -419,7 +419,7 @@ section .container .info-block .my-img {
 }
 #portfolio .container .all-projects .project-content .modal .images img, #portfolio .container .backend-projects .project-content .modal .images img, #portfolio .container .frontend-projects .project-content .modal .images img {
   width: 48.7%;
-  height: 260px;
+  height: 213px;
   border-radius: 3px;
   object-fit: cover;
 }
