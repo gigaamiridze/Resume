@@ -121,11 +121,14 @@
           .images {
             margin: 20px 0;
             @include flex-property(space-between, flex-start);
-            img {
+            a {
               width: 48.7%;
-              height: 213px;
-              border-radius: 3px;
-              object-fit: cover;
+              img {
+                width: 100%;
+                height: 213px;
+                border-radius: 3px;
+                object-fit: cover;
+              }
             }
           }
           .modal-btns {

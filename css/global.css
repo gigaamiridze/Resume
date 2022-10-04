@@ -417,8 +417,11 @@ section .container .info-block .my-img {
   justify-content: space-between;
   align-items: flex-start;
 }
-#portfolio .container .all-projects .project-content .modal .images img, #portfolio .container .backend-projects .project-content .modal .images img, #portfolio .container .frontend-projects .project-content .modal .images img {
+#portfolio .container .all-projects .project-content .modal .images a, #portfolio .container .backend-projects .project-content .modal .images a, #portfolio .container .frontend-projects .project-content .modal .images a {
   width: 48.7%;
+}
+#portfolio .container .all-projects .project-content .modal .images a img, #portfolio .container .backend-projects .project-content .modal .images a img, #portfolio .container .frontend-projects .project-content .modal .images a img {
+  width: 100%;
   height: 213px;
   border-radius: 3px;
   object-fit: cover;

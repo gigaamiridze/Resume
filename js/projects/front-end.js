@@ -139,8 +139,12 @@ for (let item of frontProjectItems) {
                             </div>
                           </div>
                           <div class="images">
-                            <img src="${item.moreInfo.firstImg}" alt="${item.className}">
-                            <img src="${item.moreInfo.secondImg}" alt="${item.className}">
+                            <a href="${item.moreInfo.firstImg}" data-lightbox="mygallery">
+                              <img src="${item.moreInfo.firstImg}" alt="${item.className}">
+                            </a>
+                            <a href="${item.moreInfo.secondImg}" data-lightbox="mygallery">
+                              <img src="${item.moreInfo.secondImg}" alt="${item.className}">
+                            </a>
                           </div>
                           <div class="modal-btns">
                             <a class="btn" href="${item.moreInfo.url}" target="_blank">visit website</a>
