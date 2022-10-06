@@ -21,8 +21,8 @@ section {
         .info-group {
           @include flex-property(flex-start, center);
           margin-bottom: 15px;
-          &:last-child {
-            margin-bottom: 0;
+          &:nth-child(6) {
+            margin-bottom: 20px;
           }
           .key {
             @extend %black-small-text;
@@ -48,6 +48,13 @@ section {
                 color: $blue;
               }
             }
+          }
+        }
+        .cv-btn {
+          @extend %blue-btn;
+          color: $white;
+          &:hover {
+            box-shadow: 10px 10px 20px rgb(51 51 255 / 20%);
           }
         }
       }

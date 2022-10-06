@@ -42,3 +42,14 @@
   @include text-property(36px, $lato, $black, none);
   font-weight: $bold;
 }
+
+%blue-btn {
+  @include sizes(150px, 100%, 40px);
+  background-color: $blue;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  @extend %black-small-text;
+  @include flex-property(center, center);
+  @include transition(all, 0.3s, ease);
+}

@@ -134,14 +134,7 @@
           .modal-btns {
             @include flex-property(flex-start, center);
             .btn {
-              @include sizes(150px, 100%, 40px);
-              background-color: $blue;
-              border-radius: 2px;
-              border: none;
-              cursor: pointer;
-              @extend %black-small-text;
-              @include flex-property(center, center);
-              @include transition(all, 0.3s, ease);
+              @extend %blue-btn;
               &:first-child {
                 color: $white;
                 margin-right: 30px;

@@ -54,7 +54,7 @@ section .container, html body header .container {
   margin: 0 auto;
 }
 
-#portfolio .container .all-projects .project-content .modal .modal-btns .btn, #portfolio .container .backend-projects .project-content .modal .modal-btns .btn, #portfolio .container .frontend-projects .project-content .modal .modal-btns .btn, #portfolio .container .all-projects .project-content .modal .info .info-box h5, #portfolio .container .backend-projects .project-content .modal .info .info-box h5, #portfolio .container .frontend-projects .project-content .modal .info .info-box h5, #portfolio .container .categories li, section .container .info-block .about-me-info .info-group .key, html body header .container .flex-block nav ul li .nav-link {
+#portfolio .container .all-projects .project-content .modal .info .info-box h5, #portfolio .container .backend-projects .project-content .modal .info .info-box h5, #portfolio .container .frontend-projects .project-content .modal .info .info-box h5, #portfolio .container .categories li, section .container .info-block .about-me-info .info-group .key, html body header .container .flex-block nav ul li .nav-link, #portfolio .container .all-projects .project-content .modal .modal-btns .btn, #portfolio .container .backend-projects .project-content .modal .modal-btns .btn, #portfolio .container .frontend-projects .project-content .modal .modal-btns .btn, section .container .info-block .about-me-info .cv-btn {
   font-size: 12px;
   font-family: "Lato", sans-serif;
   color: #333333;
@@ -106,6 +106,22 @@ section .container, html body header .container {
   color: #333333;
   text-transform: none;
   font-weight: 700;
+}
+
+#portfolio .container .all-projects .project-content .modal .modal-btns .btn, #portfolio .container .backend-projects .project-content .modal .modal-btns .btn, #portfolio .container .frontend-projects .project-content .modal .modal-btns .btn, section .container .info-block .about-me-info .cv-btn {
+  max-width: 150px;
+  width: 100%;
+  height: 40px;
+  background-color: #3333ff;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 @keyframes drop {
@@ -255,8 +271,8 @@ section .container .info-block .about-me-info .info-group {
   align-items: center;
   margin-bottom: 15px;
 }
-section .container .info-block .about-me-info .info-group:last-child {
-  margin-bottom: 0;
+section .container .info-block .about-me-info .info-group:nth-child(6) {
+  margin-bottom: 20px;
 }
 section .container .info-block .about-me-info .info-group .key {
   width: 90px;
@@ -284,6 +300,12 @@ section .container .info-block .about-me-info .info-group .social-icons i {
 }
 section .container .info-block .about-me-info .info-group .social-icons i:hover {
   color: #3333ff;
+}
+section .container .info-block .about-me-info .cv-btn {
+  color: #ffffff;
+}
+section .container .info-block .about-me-info .cv-btn:hover {
+  box-shadow: 10px 10px 20px rgba(51, 51, 255, 0.2);
 }
 section .container .info-block .my-img {
   max-width: 570px;
@@ -430,21 +452,6 @@ section .container .info-block .my-img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-#portfolio .container .all-projects .project-content .modal .modal-btns .btn, #portfolio .container .backend-projects .project-content .modal .modal-btns .btn, #portfolio .container .frontend-projects .project-content .modal .modal-btns .btn {
-  max-width: 150px;
-  width: 100%;
-  height: 40px;
-  background-color: #3333ff;
-  border-radius: 2px;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
 }
 #portfolio .container .all-projects .project-content .modal .modal-btns .btn:first-child, #portfolio .container .backend-projects .project-content .modal .modal-btns .btn:first-child, #portfolio .container .frontend-projects .project-content .modal .modal-btns .btn:first-child {
   color: #ffffff;
