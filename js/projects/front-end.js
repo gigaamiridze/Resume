@@ -6,7 +6,7 @@ const frontProjectItems = [
     date: "july, 2022",
     modalID: "book-front",
     moreInfo: {
-      description: "",
+      description: "This book is an online edition of the book. The stories told in this book are about technology and the magical abilities of modern man. There is no printed version of this book, the stories told in the book can be read and heard only thanks to technology.",
       tools: "HTML, SCSS/CSS, JavaScript.",
       firstImg: "./img/projects/sandro's-book/menu.png",
       secondImg: "./img/projects/sandro's-book/audio.png",
@@ -20,7 +20,7 @@ const frontProjectItems = [
     date: "may, 2022",
     modalID: "photolens-front",
     moreInfo: {
-      description: "",
+      description: "Photolens is a photographer and video maker portfolio website with information about him, contact information and his many photos by category. The user can also add the photo he likes to the cart and buy it.",
       tools: "Python, Flask, HTML, SCSS/CSS, JavaScript, Gulp.",
       firstImg: "./img/projects/photolens/home.png",
       secondImg: "./img/projects/photolens/shop-route.png",
@@ -34,7 +34,7 @@ const frontProjectItems = [
     date: "april, 2022",
     modalID: "ecommerce-front",
     moreInfo: {
-      description: "",
+      description: "This is a landing page website where various products are placed. The user can add the product to the cart, if desired, increase its quantity and dynamically understand the current price of the product.",
       tools: "HTML, SCSS/CSS, JavaScript, Gulp.",
       firstImg: "./img/projects/ecommerce/cart-1.png",
       secondImg: "./img/projects/ecommerce/cart-2.png",
@@ -48,7 +48,7 @@ const frontProjectItems = [
     date: "august, 2022",
     modalID: "tic-tac-toe-front",
     moreInfo: {
-      description: "",
+      description: "This is a tic tac toe game that anyone can see and play. Built into it is the game logic to find out which player has won the game.",
       tools: "HTML, SCSS/CSS, JavaScript.",
       firstImg: "./img/projects/tic-tac-toe/empty.png",
       secondImg: "./img/projects/tic-tac-toe/filled.png",
@@ -62,7 +62,7 @@ const frontProjectItems = [
     date: "june, 2020",
     modalID: "my-portfolio-front",
     moreInfo: {
-      description: "",
+      description: "This is my photography portfolio website, where I have information about myself, a gallery of my work, information about my camera and photos, and contact information.",
       tools: "HTML, CSS, JavaScript.",
       firstImg: "./img/projects/portfolio/home.png",
       secondImg: "./img/projects/portfolio/contact.png",
@@ -76,7 +76,7 @@ const frontProjectItems = [
     date: "june, 2022",
     modalID: "travel-front",
     moreInfo: {
-      description: "",
+      description: "A travel website featuring photos and information about various places. This website is a test assignment for an internship. Also located on the page is the products page, from which I fetched information from the api located in the online space.",
       tools: "HTML, SCSS/CSS, JavaScript, Gulp.",
       firstImg: "./img/projects/travel/section-1.png",
       secondImg: "./img/projects/travel/section-2.png",
@@ -90,7 +90,7 @@ const frontProjectItems = [
     date: "july, 2022",
     modalID: "delux-front",
     moreInfo: {
-      description: "",
+      description: "This is a landing page website that provides information about a delux company. The website contains information about the company, employees, agenda and contact information.",
       tools: "HTML, SCSS/CSS, JavaScript, Gulp.",
       firstImg: "./img/projects/delux/agenda.png",
       secondImg: "./img/projects/delux/contact.png",
@@ -104,7 +104,7 @@ const frontProjectItems = [
     date: "February, 2022",
     modalID: "tokyo-front",
     moreInfo: {
-      description: "",
+      description: "This is an article-type website that contains information about various people and their photos.",
       tools: "HTML, SCSS/CSS, JavaScript, Gulp.",
       firstImg: "./img/projects/tokyo/home.png",
       secondImg: "./img/projects/tokyo/about.png",

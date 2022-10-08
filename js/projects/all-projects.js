@@ -6,7 +6,7 @@ const allProjectItems = [
     date: "september, 2022",
     modalID: "paradise",
     moreInfo: {
-      description: "",
+      description: "Paradise is a music streaming website where users can register, login and add music if they want or listen to music added by others. Users can also view their statistics on the page. For example, how much music he listened to or uploaded. The website is under development.",
       tools: "Python, Flask, SQLAlchemy, Jinja2, Werkzeug, Flask-Login, Flask-Migrate, Flask-WTF, WTForms, HTML, SCSS/CSS, JavaScript, Gulp.",
       firstImg: "./img/projects/paradise/signin.png",
       secondImg: "./img/projects/paradise/add-music.png",
@@ -20,7 +20,7 @@ const allProjectItems = [
     date: "september, 2022",
     modalID: "hortensia",
     moreInfo: {
-      description: "",
+      description: "Hortensia is a text classification website that offers its users flashcards featuring random sentences pulled from a common text repository. Under the card, there is a graphic selector of the emotional wheel, according to which the customer chooses what emotion the data displayed on the card causes in him. The card marked by the user is stored in the database.",
       tools: "Python, Flask, SQLAlchemy, Jinja2, Werkzeug, Flask-Login, Flask-Admin, Flask-WTF, WTForms, HTML, SCSS/CSS, JavaScript.",
       firstImg: "./img/projects/hortensia/intro.png",
       secondImg: "./img/projects/hortensia/statistic.png",
@@ -34,7 +34,7 @@ const allProjectItems = [
     date: "May, 2022",
     modalID: "vaccine",
     moreInfo: {
-      description: "",
+      description: "Using this api one can register, login, add data, read, update and delete. If a person has been vaccinated, he will enter data on what kind of vaccine he received and how many doses. The data of vaccinated people are stored in the database.",
       tools: "Python, Flask, SQLAlchemy, Flask-RESTful, Werkzeug, Flask-JWT-Extended.",
       firstImg: "./img/projects/vaccine-api/register.png",
       secondImg: "./img/projects/vaccine-api/post.png",
@@ -48,7 +48,7 @@ const allProjectItems = [
     date: "May, 2022",
     modalID: "manager",
     moreInfo: {
-      description: "",
+      description: "Using this app one can register, login, add data, read, update and delete. A person will enter data about the product, the data of which will be stored in the database.",
       tools: "Python, Flask, SQLAlchemy, Flask-RESTful, Werkzeug, Flask-JWT-Extended.",
       firstImg: "./img/projects/manager-api/register.png",
       secondImg: "./img/projects/manager-api/post.png",
@@ -62,7 +62,7 @@ const allProjectItems = [
     date: "july, 2022",
     modalID: "book",
     moreInfo: {
-      description: "",
+      description: "This book is an online edition of the book. The stories told in this book are about technology and the magical abilities of modern man. There is no printed version of this book, the stories told in the book can be read and heard only thanks to technology.",
       tools: "HTML, SCSS/CSS, JavaScript.",
       firstImg: "./img/projects/sandro's-book/menu.png",
       secondImg: "./img/projects/sandro's-book/audio.png",
@@ -76,7 +76,7 @@ const allProjectItems = [
     date: "may, 2022",
     modalID: "photolens",
     moreInfo: {
-      description: "",
+      description: "Photolens is a photographer and video maker portfolio website with information about him, contact information and his many photos by category. The user can also add the photo he likes to the cart and buy it.",
       tools: "Python, Flask, HTML, SCSS/CSS, JavaScript, Gulp.",
       firstImg: "./img/projects/photolens/home.png",
       secondImg: "./img/projects/photolens/shop-route.png",
@@ -90,7 +90,7 @@ const allProjectItems = [
     date: "april, 2022",
     modalID: "ecommerce",
     moreInfo: {
-      description: "",
+      description: "This is a landing page website where various products are placed. The user can add the product to the cart, if desired, increase its quantity and dynamically understand the current price of the product.",
       tools: "HTML, SCSS/CSS, JavaScript, Gulp.",
       firstImg: "./img/projects/ecommerce/cart-1.png",
       secondImg: "./img/projects/ecommerce/cart-2.png",
@@ -104,7 +104,7 @@ const allProjectItems = [
     date: "May, 2022",
     modalID: "genius",
     moreInfo: {
-      description: "",
+      description: "Using the Genius api, an artist can add, read, update, and delete data. The artist will enter data with music-specific data that will be stored in the database.",
       tools: "Python, Flask, SQLAlchemy, Flask-RESTful, Werkzeug, Flask-JWT-Extended.",
       firstImg: "./img/projects/genius-api/artist.png",
       secondImg: "./img/projects/genius-api/song.png",
@@ -118,7 +118,7 @@ const allProjectItems = [
     date: "august, 2022",
     modalID: "tic-tac-toe",
     moreInfo: {
-      description: "",
+      description: "This is a tic tac toe game that anyone can see and play. Built into it is the game logic to find out which player has won the game.",
       tools: "HTML, SCSS/CSS, JavaScript.",
       firstImg: "./img/projects/tic-tac-toe/empty.png",
       secondImg: "./img/projects/tic-tac-toe/filled.png",
@@ -132,7 +132,7 @@ const allProjectItems = [
     date: "june, 2020",
     modalID: "my-portfolio",
     moreInfo: {
-      description: "",
+      description: "This is my photography portfolio website, where I have information about myself, a gallery of my work, information about my camera and photos, and contact information.",
       tools: "HTML, CSS, JavaScript.",
       firstImg: "./img/projects/portfolio/home.png",
       secondImg: "./img/projects/portfolio/contact.png",
@@ -146,7 +146,7 @@ const allProjectItems = [
     date: "june, 2022",
     modalID: "travel",
     moreInfo: {
-      description: "",
+      description: "A travel website featuring photos and information about various places. This website is a test assignment for an internship. Also located on the page is the products page, from which I fetched information from the api located in the online space.",
       tools: "HTML, SCSS/CSS, JavaScript, Gulp.",
       firstImg: "./img/projects/travel/section-1.png",
       secondImg: "./img/projects/travel/section-2.png",
@@ -160,7 +160,7 @@ const allProjectItems = [
     date: "july, 2022",
     modalID: "delux",
     moreInfo: {
-      description: "",
+      description: "This is a landing page website that provides information about a delux company. The website contains information about the company, employees, agenda and contact information.",
       tools: "HTML, SCSS/CSS, JavaScript, Gulp.",
       firstImg: "./img/projects/delux/agenda.png",
       secondImg: "./img/projects/delux/contact.png",
@@ -174,7 +174,7 @@ const allProjectItems = [
     date: "February, 2022",
     modalID: "tokyo",
     moreInfo: {
-      description: "",
+      description: "This is an article-type website that contains information about various people and their photos.",
       tools: "HTML, SCSS/CSS, JavaScript, Gulp.",
       firstImg: "./img/projects/tokyo/home.png",
       secondImg: "./img/projects/tokyo/about.png",
