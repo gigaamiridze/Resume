@@ -56,6 +56,20 @@ const allProjectItems = [
     }
   },
   {
+    img: "./img/projects/react-form/registration.png",
+    className: "react-form",
+    name: "React Registration Form",
+    date: "december, 2022",
+    modalID: "react-form",
+    moreInfo: {
+      description: "React registration form with validation using the React Hook Form library",
+      tools: "React, React Hook Form, JavaScript, HTML, CSS",
+      firstImg: "./img/projects/react-form/validation.png",
+      secondImg: "./img/projects/react-form/with-data.png",
+      url: "https://gigaamiridze.github.io/react-registration-form/",
+    }
+  },
+  {
     img: "./img/projects/sandro's-book/book.svg",
     className: "book",
     name: "Sandro's Book",
