@@ -1,5 +1,19 @@
 const frontProjectItems = [
   {
+    img: "./img/projects/react-todo/todo.png",
+    className: "react-todo",
+    name: "React Todo List",
+    date: "december, 2022",
+    modalID: "react-todo-front",
+    moreInfo: {
+      description: "React todo list app",
+      tools: "React, JavaScript, HTML, SCSS, CSS",
+      firstImg: "./img/projects/react-todo/tasks.png",
+      secondImg: "./img/projects/react-todo/completed.png",
+      url: "https://gigaamiridze.github.io/react-todo-app/",
+    }
+  },
+  {
     img: "./img/projects/react-form/registration.png",
     className: "react-form",
     name: "React Registration Form",
