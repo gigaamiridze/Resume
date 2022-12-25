@@ -70,6 +70,20 @@ const allProjectItems = [
     }
   },
   {
+    img: "./img/projects/accordion/card.png",
+    className: "accordion",
+    name: "React Accordion Card",
+    date: "december, 2022",
+    modalID: "react-accordion",
+    moreInfo: {
+      description: "React accordion card app",
+      tools: "React, JavaScript, HTML, SCSS, CSS",
+      firstImg: "./img/projects/accordion/card1.png",
+      secondImg: "./img/projects/accordion/card2.png",
+      url: "https://gigaamiridze.github.io/react-accordion-card/",
+    }
+  },
+  {
     img: "./img/projects/react-form/registration.png",
     className: "react-form",
     name: "React Registration Form",
