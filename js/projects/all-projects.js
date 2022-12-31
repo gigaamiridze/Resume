@@ -63,7 +63,7 @@ const allProjectItems = [
     modalID: "react-todo",
     moreInfo: {
       description: "React todo list app",
-      tools: "React, JavaScript, HTML, SCSS, CSS",
+      tools: "React, JavaScript, HTML, SCSS, CSS.",
       firstImg: "./img/projects/react-todo/tasks.png",
       secondImg: "./img/projects/react-todo/completed.png",
       url: "https://gigaamiridze.github.io/react-todo-app/",
@@ -77,10 +77,24 @@ const allProjectItems = [
     modalID: "react-accordion",
     moreInfo: {
       description: "React accordion card app",
-      tools: "React, JavaScript, HTML, SCSS, CSS",
+      tools: "React, JavaScript, HTML, SCSS, CSS.",
       firstImg: "./img/projects/accordion/card1.png",
       secondImg: "./img/projects/accordion/card2.png",
       url: "https://gigaamiridze.github.io/react-accordion-card/",
+    }
+  },
+  {
+    img: "./img/projects/nft-card/nft-card.png",
+    className: "nft-card",
+    name: "React NFT Card",
+    date: "december, 2022",
+    modalID: "nft-card",
+    moreInfo: {
+      description: "NFT preview card with React and TypeScript",
+      tools: "React, TypeScript, HTML, CSS.",
+      firstImg: "./img/projects/nft-card/nft-hover.png",
+      secondImg: "./img/projects/nft-card/nft-hover-1.png",
+      url: "https://gigaamiridze.github.io/nft-preview-card/",
     }
   },
   {
@@ -91,7 +105,7 @@ const allProjectItems = [
     modalID: "react-form",
     moreInfo: {
       description: "React registration form with validation using the React Hook Form library",
-      tools: "React, React Hook Form, JavaScript, HTML, CSS",
+      tools: "React, React Hook Form, JavaScript, HTML, CSS.",
       firstImg: "./img/projects/react-form/validation.png",
       secondImg: "./img/projects/react-form/with-data.png",
       url: "https://gigaamiridze.github.io/react-registration-form/",
