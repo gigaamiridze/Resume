@@ -84,6 +84,20 @@ const allProjectItems = [
     }
   },
   {
+    img: "./img/projects/rating/card.png",
+    className: "rating-card",
+    name: "React Interactive Rating Card",
+    date: "january, 2023",
+    modalID: "rating-card",
+    moreInfo: {
+      description: "Interactive rating component with React and TypeScript",
+      tools: "React, TypeScript, HTML, SCSS, CSS.",
+      firstImg: "./img/projects/rating/active.png",
+      secondImg: "./img/projects/rating/thank-you.png",
+      url: "https://gigaamiridze.github.io/interactive-rating-component/",
+    }
+  },
+  {
     img: "./img/projects/nft-card/nft-card.png",
     className: "nft-card",
     name: "React NFT Card",
